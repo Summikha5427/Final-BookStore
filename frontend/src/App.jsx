@@ -12,10 +12,10 @@ const App = () => {
   return (
     <Routes>
       <Route path='/Allhamdulillah-/' element={<Home />}></Route>
-      {/* <Route path='/books/create' element={<CreateBook/>}></Route>
-      <Route path='/books/edit/:id' element={<EditBook/>}></Route>
-      <Route path='/books/details/:id' element={<ShowBooks/>}></Route>
-      <Route path='/books/delete/:id' element={<DeleteBook/>}></Route> */}
+      <Route path='/Allhamdulillah-/books/create' element={<CreateBook/>}></Route> 
+      <Route path='/Allhamdulillah-/books/edit/:id' element={<EditBook/>}></Route>
+       <Route path='/Allhamdulillah-/books/details/:id' element={<ShowBooks/>}></Route>
+      <Route path='/Allhamdulillah-/books/delete/:id' element={<DeleteBook/>}></Route> 
     </Routes>
   );
 };

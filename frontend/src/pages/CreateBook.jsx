@@ -4,6 +4,7 @@ import Spinner from "../components/Spinner";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useSnackbar } from "notistack";
+import images from "../assets/images.jpg";
 
 const CreateBooks = () => {
   const [title, setTitle] = useState("");
@@ -36,7 +37,7 @@ const CreateBooks = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-4 font-bold bg-cover h-screen" style={{backgroundImage:`url(${images})`}}>
       <BackButton />
       <h1 className="text-3xl my-4">Create Book</h1>
       {loading ? <Spinner /> : ""}

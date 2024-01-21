@@ -7,6 +7,8 @@ import { BsInfoCircle } from "react-icons/bs";
 import { MdOutlineAddBox, MdOutlineDelete } from "react-icons/md";
 import BooksCard from "../components/home/BooksCard.jsx";
 import BooksTable from "../components/home/BooksTable.jsx";
+import images from "../assets/images.jpg";
+
 
 const Home = () => {
   const [books, setBooks] = useState([]);
@@ -27,7 +29,7 @@ const Home = () => {
       });
   }, []);
   return (
-    <div className="p-4">
+    <div className="p-4 bg-cover h-screen" style={{backgroundImage:`url(${images})`}}>
       <div className="flex justify-center items-center gap-x-4">
         <button
           className="bg-sky-300 rounded-lg px-4 py-1 hover:bg-sky-600"

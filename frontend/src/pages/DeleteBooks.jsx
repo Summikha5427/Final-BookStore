@@ -4,6 +4,7 @@ import BackButton from "../components/BackButton";
 import Spinner from "../components/Spinner";
 import { useNavigate, useParams } from "react-router-dom";
 import { useSnackbar } from "notistack";
+import images from "../assets/images.jpg";
 
 const DeleteBook = () => {
   const { id } = useParams();
@@ -29,7 +30,7 @@ const DeleteBook = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-4 font-bold bg-cover h-screen" style={{backgroundImage:`url(${images})`}}>
       <BackButton />
       <h1 className="text-3xl my-4">Delete Book</h1>
       {loading ? <Spinner /> : ""}

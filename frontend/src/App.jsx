@@ -10,7 +10,7 @@ import ShowBooks from "./pages/ShowBooks";
 
 const App = () => {
   return (
-    <Routes basename="/Allhamdulillah-">
+    <Routes basename="/Allhamdulillah-/books/">
       <Route path='/Allhamdulillah-/' element={<Home />}></Route>
       <Route path='/Allhamdulillah-/books/create' element={<CreateBook/>}></Route> 
       <Route path='/Allhamdulillah-/books/edit/:id' element={<EditBook/>}></Route>

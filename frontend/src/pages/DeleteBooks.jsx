@@ -30,7 +30,7 @@ const DeleteBook = () => {
   };
 
   return (
-    <div className="p-4 font-bold bg-cover h-screen" style={{backgroundImage:`url(${images})`}}>
+    <div className="p-4 font-bold bg-cover h-screen w-full" style={{backgroundImage:`url(${images})`}}>
       <BackButton />
       <h1 className="text-3xl my-4">Delete Book</h1>
       {loading ? <Spinner /> : ""}

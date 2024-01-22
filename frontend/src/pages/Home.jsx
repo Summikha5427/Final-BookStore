@@ -29,7 +29,7 @@ const Home = () => {
       });
   }, []);
   return (
-    <div className="p-4 bg-cover h-screen" style={{backgroundImage:`url(${images})`}}>
+    <div className="p-4 bg-cover h-screen w-full" style={{backgroundImage:`url(${images})`}}>
       <div className="flex justify-center items-center gap-x-4">
         <button
           className="bg-sky-300 rounded-lg px-4 py-1 hover:bg-sky-600"
